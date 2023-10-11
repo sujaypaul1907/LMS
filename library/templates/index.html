@@ -1,0 +1,50 @@
+{% extends 'basic.html' %}
+
+{% load static %}
+
+{% block title %} 
+
+Library Management System 
+
+{% endblock %}
+
+{% block css %}
+
+{% endblock %}
+  
+{% block body %}
+<div class="p-4 bg-light">
+    <div class="container-fluid py-3">
+      <center><h1 class="display-5 fw-bold">Welcome to Smart Library</h1></center>
+      <center><p class="col-md-8 fs-4">You can register as a member. You will be able to issue any book thorugh the admin. After that you need to return the book within 30 days or else a fine of Rs 50 will be charged per day till the book is returned.</p></center>
+      <center><a href="/student_registration/" class="btn btn-primary btn-lg">Register as Member</a></center>
+    </div>
+    <br>
+    <div class="container">
+  <div class="row">
+
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'category.png' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'library_back.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'students.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+{% endblock %}
